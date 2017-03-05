@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Video example</title>
+    <style type="text/css">
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <video_player></video_player>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/riot/3.3.1/riot+compiler.min.js"></script>
+    <script type="riot/tag" src="video_playlist.tag"></script>
+    <script type="riot/tag" src="video_wistia.tag"></script>
+    <script type="riot/tag" src="video_player.tag"></script>
+    <script type="text/javascript">
+      riot.mount('video_player', {
+        project_id: '3ve3s4dus4',
+        api_key: '2aeb7fcdbed9d73d9298db96f7671c755c43c8513db9d701effa69b5865ba0ea'
+      })
+    </script>
+  </body>
+</html>

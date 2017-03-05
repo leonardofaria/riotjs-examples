@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Example 2</title>
+    <link rel="stylesheet" href="example2.css">
+  </head>
+  <body>
+    <todo></todo>
+
+    <script src="//cdn.jsdelivr.net/riot/3.3.1/riot+compiler.min.js"></script>
+    <script type="riot/tag" src="example2.tag"></script>
+    <script type="text/javascript">
+      riot.mount('todo', {
+        title: 'I want to behave!',
+        items: [
+          { title: 'Avoid excessive caffeine', done: true },
+          { title: 'Hidden item',  hidden: true },
+          { title: 'Be less provocative'  },
+          { title: 'Be nice to people' }
+        ]
+      })
+    </script>
+  </body>
+</html>
